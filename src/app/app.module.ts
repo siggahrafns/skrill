@@ -1,20 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routing } from './app.routes';
 
 import { AppComponent } from './app.component';
+import {HomeComponent} from "./home/home.component";
+
+import {MdCardModule} from '@angular2-material/card';
+import {MdButtonModule} from '@angular2-material/button';
+import {MdIconModule} from '@angular2-material/icon';
+import {MdIconRegistry} from '@angular2-material/icon';
+
+const APP_COMPONENTS = [
+  HomeComponent
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, APP_COMPONENTS
   ],
   imports: [
+    routing,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule, MdCardModule, MdButtonModule, MdIconModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [MdIconRegistry],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppModule { }
