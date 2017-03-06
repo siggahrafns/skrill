@@ -1,0 +1,10 @@
+.bg-img {
+  background-image: url('../assets/img/cats/cat_cover.jpg');
+  background-image: url('../assets/img/temp.jpg');
+  background-position: top center;
+  color: #ffffff;
+  height: 645px;
+  z-index: 999999;
+
+}
+

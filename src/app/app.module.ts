@@ -6,6 +6,7 @@ import { routing } from './app.routes';
 
 import { AppComponent } from './app.component';
 import {HomeComponent} from "./home/home.component";
+import {NavbarComponent} from "./navbar/navbar.component";
 
 import {MdCardModule} from '@angular2-material/card';
 import {MdButtonModule} from '@angular2-material/button';
@@ -13,7 +14,8 @@ import {MdIconModule} from '@angular2-material/icon';
 import {MdIconRegistry} from '@angular2-material/icon';
 
 const APP_COMPONENTS = [
-  HomeComponent
+  HomeComponent,
+  NavbarComponent
 ];
 
 @NgModule({

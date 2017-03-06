@@ -1,0 +1,33 @@
+.bannerWrapper{
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+
+}
+
+.bannerWrapper  .btn{
+  display:none;
+  visibility: hidden;
+  color: white;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.bannerWrapper:hover  .btn{
+
+    display:block;
+    visibility: visible;
+
+}
+
+.bannerText{
+  font-family: 'MeetMeInBrooklyn-Regular';
+  font-size: 130px;
+  line-height: 115px;
+  color: darkslategray;
+  text-align: right;
+  width: 46%;
+  float: left;
+  padding-top: 155px;
+  letter-spacing: -1px;
+}

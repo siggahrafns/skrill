@@ -1,0 +1,29 @@
+ul, li{
+  list-style: none;
+}
+
+.navbar-header{
+  height: 70px;
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  right: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  z-index: 99999;
+  background: #434737;
+  border-bottom: 1px solid hsla(117, 33%, 38%, 1);
+}
+
+
+.nav-menu-large ul li{
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}

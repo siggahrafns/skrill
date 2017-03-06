@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'home_component',
-  styles: [],
+  styleUrls: ['./home.component.css'],
   template: require('./home.component.html')
 })
 export class HomeComponent  {
