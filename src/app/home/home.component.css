@@ -31,3 +31,10 @@
   padding-top: 155px;
   letter-spacing: -1px;
 }
+
+
+.kitten1{
+  height:200px;
+  position: absolute;
+  transition: top 0.1s;
+}

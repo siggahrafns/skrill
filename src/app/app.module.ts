@@ -12,6 +12,7 @@ import {MdCardModule} from '@angular2-material/card';
 import {MdButtonModule} from '@angular2-material/button';
 import {MdIconModule} from '@angular2-material/icon';
 import {MdIconRegistry} from '@angular2-material/icon';
+import {ScrollSpyModule} from "ng2-scrollspy/dist/index";
 
 const APP_COMPONENTS = [
   HomeComponent,
@@ -25,6 +26,7 @@ const APP_COMPONENTS = [
   imports: [
     routing,
     BrowserModule,
+    ScrollSpyModule.forRoot(),
     FormsModule,
     HttpModule, MdCardModule, MdButtonModule, MdIconModule
   ],
