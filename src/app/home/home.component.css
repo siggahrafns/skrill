@@ -1,8 +1,13 @@
 .bannerWrapper{
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  /*background: rgba(0, 0, 0, 0.7);*/
   height: 100%;
-
+  background: url('../assets/img/environment/sky.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 887px;
 }
 
 .bannerWrapper  .btn{
@@ -36,5 +41,39 @@
 .kitten1{
   height:200px;
   position: absolute;
-  transition: top 0.1s;
+  z-index: 10;
+  -moz-transform:rotate(-135deg) translate(50px);
+  /* WebKit */
+  -webkit-transform: rotate(-135deg) translate(50px);
+  /* Opera */
+  -o-transform: rotate(-135deg) translate(50px);
+  /* Standard */
+  transform: rotate(-135deg) translate(50px);
+
+}
+
+.kitten1Rotate {
+  opacity: 1;
+  transition: all 1s;
+  /* Firefox */
+  -moz-transform:rotate(-55deg) translate(50px);
+  /* WebKit */
+  -webkit-transform: rotate(-5deg) translate(50px);
+  /* Opera */
+  -o-transform: rotate(-55deg) translate(50px);
+  /* Standard */
+  transform: rotate(-55deg) translate(50px);
+
+  z-index: 1000;
+}
+
+
+.grass{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /*top: 100%;*/
+  -webkit-transition: bottom 0.5s, opacity 1.5s;
+  transition: bottom 0.5s, opacity 1.5s;
 }

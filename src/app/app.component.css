@@ -1,10 +1,18 @@
 .bg-img {
   background-image: url('../assets/img/cats/cat_cover.jpg');
-  background-image: url('../assets/img/temp.jpg');
+  background-image: url('../assets/img/environment/sky.jpg');
   background-position: top center;
   color: #ffffff;
   height: 645px;
   z-index: 999999;
+}
 
+.bg-sky{
+  background: url('../assets/img/environment/sky.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 2000px;
 }
 

@@ -2,12 +2,12 @@
 
   <div class="bannerText">..</div>
   <button class="btn">Hello</button>
-</div>
-
-<div style="height: 800px; background:black;">
-
   <img class="kitten1" src="../../assets/img/cats/kitten-playing.png"
-      [style.top.px]="pos" [style.left.px]="pos-20"
-  />
+        [class.kitten1Rotate]="kittyStill"
+       [style.top.px]="kittyPosTop" [style.left.px]="kittyPosLeft"/>
 
+  <img class="grass" src="../../assets/img/environment/grass.png"
+       [style.bottom.px]="grassPos" [style.opacity]="grassOpacity"
+  />
 </div>
+
