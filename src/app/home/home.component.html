@@ -1,13 +1,19 @@
-<div class="bannerWrapper" scrollSpy>
+<div class="bannerWrapper" scrollSpy (click)="startTransition = !startTransition">
 
-  <div class="bannerText">..</div>
-  <button class="btn">Hello</button>
+
+  <img class="ufo" src="../../assets/img/elements/ufo.png"
+      [class.ufoGone]="startTransition" (click)="startTransition = !startTransition"
+       />
+
   <img class="kitten1" src="../../assets/img/cats/kitten-playing.png"
-        [class.kitten1Rotate]="kittyStill"
-       [style.top.px]="kittyPosTop" [style.left.px]="kittyPosLeft"/>
+        [class.kitten1Rotate]="startTransition" [class.kittenMove]="secondTransition"/>
 
   <img class="grass" src="../../assets/img/environment/grass.png"
-       [style.bottom.px]="grassPos" [style.opacity]="grassOpacity"
+        [class.showGrass]="startTransition"
   />
+
+  <h1 class="welcomeText"
+      [class.moveLeft]="secondTransition">Skrill</h1>
+
 </div>
 
